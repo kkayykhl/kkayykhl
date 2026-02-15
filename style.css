@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #c6ecff, #e6f9ff, #ffffff);
+  min-height: 100vh;
+  padding: 40px 0;
+  position: relative;
+  overflow-x: hidden;
+}
+
+
+.container {
+  width: 90%;
+  max-width: 420px;
+  text-align: center;
+  margin: 0 auto; /* ini yang bikin dia tetap tengah */
+}
+
+
+/* Profile */
+.profile img {
+  width: 110px;
+  border-radius: 50%;
+  border: 3px solid #4db8ff;
+  margin-bottom: 15px;
+}
+
+.profile h1 {
+  color: #0066cc;
+  margin-bottom: 5px;
+}
+
+.profile p {
+  color: #3399ff;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+/* Links */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Card */
+.link-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  padding: 16px;
+  border-radius: 14px;
+  background: #b3e5ff;
+  color: #003366;
+  font-weight: bold;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 140, 255, 0.15);
+}
+
+.link-card img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.link-card:hover {
+  background: #4db8ff;
+  transform: scale(1.04);
+  box-shadow: 0 8px 20px rgba(0, 140, 255, 0.35);
+}
+
+/* Rubik decoration */
+.rubik {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(45deg, #4db8ff, #99ddff);
+  position: fixed;
+  border-radius: 12px;
+  opacity: 0.3;
+  animation: float 8s ease-in-out infinite;
+  z-index: -1;
+}
+
+.rubik1 {
+  top: 15%;
+  left: 10%;
+}
+
+.rubik2 {
+  bottom: 15%;
+  right: 10%;
+  animation-delay: 4s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(15deg);
+  }
+  50% {
+    transform: translateY(-30px) rotate(25deg);
+  }
+}
+
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+  color: #3399ff;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+footer p:first-child {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
